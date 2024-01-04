@@ -1,5 +1,15 @@
 # ExchangeApp
 
+ExchangeApp helps you to convert currencies rates.
+To run this app plaes clone repository from : https://github.com/mordico25/exchange-app
+Then, run `npm install` command.
+After npm finished install all packages, run `ng serve` command and then open browser on http://localhost:4200/ .
+
+ENJOY (-; ,
+From Mordechai Cohen.
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.8.
 
 ## Development server
