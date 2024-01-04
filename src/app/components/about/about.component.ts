@@ -14,4 +14,9 @@ export class AboutComponent {
   get lastResults(){
     return JSON.parse(localStorage.getItem('history') as any);//this.converterService.history;
   }
+
+  cleanHistory(){
+    localStorage.setItem('history','[]');
+    this.converterService.history=[];
+  }
 }
