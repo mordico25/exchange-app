@@ -1,0 +1,27 @@
+<div>
+    <h4>Update to:{{updateDate|date:'dd/MM/YYYY HH:mm'}}</h4>
+</div>
+<div class="main-div">
+    <div>
+        <h3 class="header">Currency Converter</h3>
+    </div>
+    <div>
+        <input type="number" class="number-input" [(ngModel)]="amount" (change)="calc()"/>
+        <label class="label">From:</label>
+        <select class="select" [(ngModel)]="from" (change)="calc()">
+            
+            <option *ngFor="let currency of currencyTypes" [value]="currency">{{currency}}</option>
+        </select>
+        <label class="label">To:</label>
+        <select class="select" [(ngModel)]="to"  (change)="calc()">
+            
+            <option *ngFor="let currency of currencyTypes" [value]="currency">{{currency}}</option>
+        </select>
+    </div>
+    <div>
+        <span class="result-span">{{convertedValue}}</span>
+    </div>
+
+</div>
+
+<!--   -->

@@ -1,0 +1,18 @@
+.nav {
+
+    --border: 2px solid grey;
+    background-color: cornflowerblue;
+    color: azure;
+    border-bottom: var(--border);
+    height: 2.5rem;
+
+    .nav-link {
+        
+        padding: 0px 1rem 1.3rem 1rem;
+        font-family: system-ui;
+
+        &:not(:first-child){
+            border-left: var(--border);
+        }
+    }
+}
