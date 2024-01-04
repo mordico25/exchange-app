@@ -12,6 +12,6 @@ export class AboutComponent {
     
   }
   get lastResults(){
-    return this.converterService.history;
+    return JSON.parse(localStorage.getItem('history') as any);//this.converterService.history;
   }
 }
