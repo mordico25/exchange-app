@@ -5,7 +5,8 @@ To run this app plaes clone repository from : https://github.com/mordico25/excha
 Then, run `npm install` command.
 After npm finished install all packages, run `ng serve` command and then open browser on http://localhost:4200/ .
 
-ENJOY (-; ,
+ENJOY (-; 
+
 From Mordechai Cohen.
 
 
