@@ -1,7 +1,7 @@
 # ExchangeApp
 
 ExchangeApp helps you to convert currencies rates.
-To run this app plaes clone repository from : https://github.com/mordico25/exchange-app
+To run this app, plaese clone repository from : https://github.com/mordico25/exchange-app .
 Then, run `npm install` command.
 After npm finished install all packages, run `ng serve` command and then open browser on http://localhost:4200/ .
 
