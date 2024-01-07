@@ -6,7 +6,7 @@
         <h3 class="header">Currency Converter</h3>
     </div>
     <div>
-        <input type="number" class="number-input" [(ngModel)]="amount" (change)="calc()"/>
+        <input type="number" class="number-input" [(ngModel)]="amount" (input)="calc()"/>
         <label class="label">From:</label>
         <select class="select" [(ngModel)]="from" (change)="calc()">
             
@@ -18,8 +18,8 @@
             <option *ngFor="let currency of currencyTypes" [value]="currency">{{currency}}</option>
         </select>
     </div>
-    <div>
-        <span class="result-span">{{convertedValue}}</span>
+    <div class="result">
+        <span>{{convertedValue}}</span>
     </div>
 
 </div>
