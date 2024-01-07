@@ -7,7 +7,7 @@
     <div>
         <ul>
             <li *ngFor="let res of lastResults">
-                <span>{{'At ' + (res.date|date:'dd/MM/YYYY HH:mm')}}</span>:
+                <span>{{'At ' + (res.date|date:'dd/MM/YYYY HH:mm')}}</span>
                 <span>{{': '+ res.value}}</span>
             </li>
         </ul>
