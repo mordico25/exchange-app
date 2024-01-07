@@ -31,7 +31,7 @@ export class ConverterService {
           const now = new Date();
           now.setSeconds(0);
           now.setMilliseconds(0);
-          const currencyValue = `${amount} ${from} = ${currencyValue}` //this.currencyPipe.transform(value,to)
+          const currencyValue = `${amount} ${from} =${value.toFixed(3)} ${to}` //this.currencyPipe.transform(value,to)
           if(!this.history.some(value=> value.amount==amount&&value.date==now&&value.from==from&&value.to==to)){
             const newValueForHistory = { date: now, value:currencyValue, from, to, amount }
             this.history.push(newValueForHistory)
