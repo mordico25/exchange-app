@@ -8,7 +8,7 @@
         <ul>
             <li *ngFor="let res of lastResults">
                 <span>{{'At ' + (res.date|date:'dd/MM/YYYY HH:mm')}}</span>:
-                <span>{{'  From '+ res.amount + " "+res.from }}</span>
+                <span>{{': '+ res.amount + " "+res.from }}</span>
                 <span>{{' = '+res.value}}</span>
 <!--                 <span>{{' Equals: '+res.value}}</span> -->
             </li>
