@@ -31,12 +31,12 @@ export class ConverterService {
           const now = new Date();
           now.setSeconds(0);
           now.setMilliseconds(0);
-          const currencyValue = `${value.toFixed(3)} ${to}` //this.currencyPipe.transform(value,to)
+          const currencyValue = `${amount} ${from} = ${currencyValue}` //this.currencyPipe.transform(value,to)
           if(!this.history.some(value=> value.amount==amount&&value.date==now&&value.from==from&&value.to==to)){
             const newValueForHistory = { date: now, value:currencyValue, from, to, amount }
             this.history.push(newValueForHistory)
             //this.currencyPipe.transform(amount,from)
-            this.lastValue = `${amount} ${from} = ${currencyValue}` ;
+            this.lastValue = currencyValue ;
 
             let lastHistory = JSON.parse(localStorage.getItem('history') as any);
             localStorage.setItem('history',JSON.stringify([...(lastHistory?lastHistory:[]),newValueForHistory]))
