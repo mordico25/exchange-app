@@ -10,7 +10,7 @@ import { ConverterService } from '../../services/converter.service';
 export class ConverterComponent {
 
   constructor(private converterService:ConverterService){
-
+      this.converterService.lastValue = '';
   }
     
   from:string="";
